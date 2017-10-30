@@ -1,0 +1,118 @@
+@import 'variables';
+
+body {
+    background: $black;
+}
+
+//Main nav Styles
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 21px 30px 21px 30px;
+    
+    .nav-mobile {
+        display: none;
+    }
+    
+    .main-nav, .social-nav {
+        display: flex;
+    }
+    
+    
+//    Basic styles for ul and li in nav bar 
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: capitalize;
+        
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+
+        }
+    }
+//    End of basic styles
+    
+    .main-nav {
+        background: transparent;
+        .logo {
+            color: #fff;
+            display: inline-block;
+            font-size: 26px;
+            span {
+                margin: 0 7px 0 5px;
+                font-weight: 400;
+            }
+        }
+        
+        li {
+            font-weight: bold;
+            padding: 10px 0 10px 5px;
+        }
+        .nav-bar {
+            display: inline-block;
+            
+            li {
+                display: inline-block;
+            }
+        }
+        
+        .dropdown {
+                cursor: pointer;
+            }
+        
+        a {
+            padding-right: 4px;
+        }
+    } 
+    //end of main nav
+    
+    .social-nav {
+        font-size: 17px;
+        
+        li {
+            display: inline-block;
+            padding: 10px 0px 10px 12px;
+            
+            .login {
+                border: 2px solid $grey;
+                border-radius: 20px;
+                padding: 5px 10px;
+                
+                &:hover {
+                    border: 2px solid #fff;
+                }
+            }
+        }
+        
+        .lang {
+            color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            margin:  10px 0 0 25px;
+            position: relative;
+            top: 0;
+            
+            
+            i {
+                font-size: 20px
+            }
+            
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+            
+            .flags {
+                top: 34px;
+                left: -61px;
+            }
+        } //end of lang
+    } // end of social nav bar 
+    
+    
+    
+}

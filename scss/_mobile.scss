@@ -1,0 +1,149 @@
+@import 'variables';
+
+body {
+    background: $black;
+}
+
+ .overlay {
+     display: none;
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     z-index: 0!important; 
+}
+
+//Main nav Styles
+
+nav {
+    font-family: sans-serif;
+    padding: 21px 30px 21px 30px;
+    z-index: 10!important;
+    
+    //    Basic styles for ul and li in nav bar 
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: capitalize;
+        
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+
+        }
+    } //    End of basic styles
+}
+
+
+// Nav-mobile
+.nav-mobile {
+    display: flex;
+    a {
+        flex: 1;
+    }
+    i {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+main-nav, .social-nav {
+    display: flex;
+}
+  
+
+// Main Nav
+.main-nav {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    .logo {
+        display: none;
+    }
+    li {
+        font-weight: bold;
+        padding: 10px 0 10px 5px;
+        
+    }
+    .dropdown {
+        cursor: pointer;
+    }
+    a {
+        padding-right: 4px;
+    }
+} 
+    //end of main nav
+    
+
+// Nav-Bar - First level
+.nav-bar {
+    display: none;
+}
+.nav-secondLevel{
+    display: none;
+    z-index: 10;
+
+    li {
+        display: block!important;
+        border-bottom: 1px solid $grey;
+    }
+}
+
+// Social Nav
+.social-nav {
+    font-size: 17px;
+    li {
+        display: none;
+    }
+    
+    //Languages
+    .lang {
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        position: absolute;
+        top: 21px;
+        right: 15px;
+        
+        i {
+            font-size: 20px
+        }
+        .fa-chevron-down {
+            font-size: 13px;
+        }
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .flags {
+            display: none;
+            background: #fff;
+            border-radius: 18px;
+            padding: 10px;
+            position: absolute;
+            top: 34px;
+            right: 0;
+            width: 100px;
+            height: auto;
+                
+            li {
+                color: $grey;
+                display: block;
+                opacity: 0.5;
+                padding-bottom: 5px;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        } // end of flags
+    } //end of lang
+} // end of social nav bar 
+    
+    
+    
