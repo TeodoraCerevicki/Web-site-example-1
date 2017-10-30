@@ -148,9 +148,73 @@ nav {
     }
     
     
+    .game {
+        margin: 30px 0;
+    }
     
+    .title {
+        background: #232c30;
+        border: 3px dashed $yellow;
+        border-radius: 50%;
+        text-transform: uppercase;
+        width: 100px;
+        height: 100px;
+    }
     
-    
+    .screen-bugs {
+        background: url(../img/screen.png) no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+        position: relative;
+        width: 747px;
+        height: 473px;
+        i {
+            color: $black;
+            cursor: pointer;
+            font-size: 30px;
+            position: absolute;
+            
+        }
+        
+        .one {
+            color: #00a364;
+            left: 330px;
+            top: 110px;
+            transition: transform 1.5s;
+            
+        }
+        
+        .two {
+            color: #00a364;
+            right: 264px;
+            bottom: 110px;
+            transform: rotateZ(270deg);
+            &:hover {
+                transform: translateY(-2000px);
+            }
+        }
+        
+        .three {
+            color: $black;
+            left: 378px;
+            top: 169px;
+            transform: rotateZ(45deg);
+            &:hover {
+                transform: translateY(-2000px);
+            }
+        }
+        
+        .four {
+            color: $yellow;
+            left: 166px;
+            top: 190px;
+            transform: rotateZ(180deg);
+            &:hover {
+                transform: translateY(-2000px);
+            }
+        }
+        
+    }
     
     
     .learn {
