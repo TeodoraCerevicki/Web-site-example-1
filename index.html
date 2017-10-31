@@ -18,13 +18,10 @@
     </head>
     
     <body>
-        
         <header>
-            
-            Navigation menu-->
+            <!--Navigation menu-->
             <nav>
-                
-<!--            Main nav-->
+                <!-- Mobile  Main nav-->
                 <div class="nav-mobile">
                     
                     <a href="#"><i class="fa fa-bars burger" aria-hidden="true"></i></a>
@@ -33,6 +30,7 @@
                     
                 </div>
                 
+                <!--  Main nav-->
                 <div class="main-nav">
                     <div class="logo">
                         <i class="fa fa-bug" aria-hidden="true"></i><span>Bugs</span>
@@ -60,8 +58,7 @@
             <!--  end of nav bar-->
                 </div><!--  end of main bar-->
                 
-                
-<!--                Social nav-->
+                <!--Social nav-->
                 <div class="social-nav">
                     
                     <ul>
@@ -94,23 +91,32 @@
             </nav>
         </header>
         
-        
-        
         <div class="wrapper">
+            
+            <!-- Mai content -->
             <section class="main-content">
                 <section class="heading">
                     <h1>It's time to ditch Skype and TeamSpeak.</h1>
                     <h2>All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone. Stop paying for TeamSpeak servers and hassling with Skype. Simplify your life.</h2>
+                    
+                    
                     <div class="link-button">
                         <a href="#" >Download</a>
                     </div>
                 </section>
                 
+                
+                <!-- Game -->
                 <section class="game">
                     <div class="title">
                         <h4>get rid<br> of the <br>bugs!</h4>
                     </div>
                    
+                    <div class="product-mobile">
+                        <img src="img/phone.png">
+                        
+                    </div>
+                    
                     <div class="screen-bugs">
                     
                         
@@ -124,18 +130,17 @@
                     </div>
                 </section>
                 
-                
-                
+                <!-- Learn link-button -->
                 <div class="link-button learn">
                     <a href="#">Learn more</a>
                 </div>
-                
-                
             </section>
             
             
             
             <footer>
+                
+                <!-- Contact -->
                 <section class="contact">
                 <div class="logo">
                     <i class="fa fa-bug" aria-hidden="true"></i>
@@ -172,6 +177,7 @@
                 </section>
                 <hr>
                 
+                <!-- Sign-in -->
                 <section class="sign-in">
                     <article>
                         <h1>Ready to try Discord? It's free!</h1>
@@ -179,69 +185,15 @@
                     </article>
                     
                     <div class="link-button">
-                    <a href="#">Sign up now!</a>
-                </div>
+                        <a href="#">Sign up now!</a>
+                    </div>
                 </section>
-                
-                
             </footer>
         </div>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="js/script.js"></script>
         
-        
-        <script>
-           
-//             ==================================
-//                   Main nav
-//            ===================================
-            $(function () {
-                $('.burger').click(function () {
-                    
-                    $('.nav-bar').slideToggle(1000);
-                });
-            });
-
-            
-            //             ==================================
-//                   Dropdown
-//            ===================================
-            $(function () {
-                $('.dropdown').click(function () {
-                    
-                    $('.nav-secondLevel').slideToggle(1000);
-                });
-            });
-//             ==================================
-//                   Lang - Flags
-//            ===================================
-            $(function () {
-                $('.lang').click(function () {
-                    $('.flags').fadeToggle(1000);
-                });
-            });
-            
-            
-          
-//            =====================================
-//                Bugs
-//==================================
-        $(function () {
-                $('.one').click(function () {
-                    $(this).css({'transform': 'translateY(-2000px'}) );
-                });
-            });
-            
-        </script>
     </body>
 </html>
 

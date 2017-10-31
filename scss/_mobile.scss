@@ -4,6 +4,25 @@ body {
     background: $black;
 }
 
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+hr {
+    border: 1px solid $grey;
+}
+
+.link-button {
+    transition: transform 0.5s;
+    &:hover {
+        transform: translateY(5px);
+    }
+}
+
+.logo i {
+    color: $blue;
+}
 
 
 //Main nav Styles
@@ -45,9 +64,9 @@ nav {
     }
 }
 
-main-nav, .social-nav {
-    display: flex;
-}
+//main-nav, .social-nav {
+//    display: flex;
+//}
   
 
 // Main Nav
@@ -96,7 +115,7 @@ main-nav, .social-nav {
         color: rgba(255, 255, 255, 0.5);
         cursor: pointer;
         position: absolute;
-        top: 21px;
+        top: 36px;
         right: 15px;
         
         i {
@@ -135,7 +154,109 @@ main-nav, .social-nav {
 
 // ========= Main Content =========
 
-.wrapper {
-    //width: 80%;
+.main-content {
+    color: #fff;
+    margin: 85px 0;
+    text-align: center;
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    a {
+        background: #fff;
+        border-radius: 10px;
+        color: $black;
+        display: inline-block;
+        font-size: 18px;
+        margin: 30px 0;
+        padding: 15px;
+        
+    }
+    
+    
+    .game {
+        margin: 30px 0;
+    }
+    
+    .title {
+        background: #232c30;
+        border: 3px dashed $yellow;
+        border-radius: 50%;
+        text-transform: uppercase;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .product-mobile {
+        margin-top: 30px;
+        img {
+            width: 170px;
+        }
+    }
+    
+    .screen-bugs {
+        display: none;
+    }
+    
+    
+    .learn {
+        a {
+            background: transparent;
+            border: 3px solid $blue;
+            border-radius: 5px;
+            color: $blue;
+        }
+    }
+}
+
+footer {
+    color: #fff;
+    padding: 30px 0;
+    
+    .contact {
+        display: block;
+        margin-bottom: 65px;
+        text-align: center;
+        text-transform: capitalize;
+       
+        i {
+            font-size: 30px;
+        }
+        
+        h3 {
+        margin-top: 0;
+        }
+        
+        ul {
+            margin: 30px 0;
+            padding: 0;
+        }
+        
+        li {
+            padding-bottom: 5px;
+        }
+    } //enf of contact
+    
+    .sign-in {
+        margin-top: 65px;
+        text-align: center;
+        h1 {
+            font-size: 23px;
+        }
+        h2 { 
+            font-size: 14px;
+        }
+        
+        a {
+            background: $blue;
+            border-radius: 5px;
+            color: $grey;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 17px;
+            padding: 20px 15px;
+        }
+    }
 }
     

@@ -1,6 +1,27 @@
 body {
   background: #18191c; }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+hr {
+  border: 1px solid #3e4144; }
+
+.link-button {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+  .link-button:hover {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px); }
+
+.logo i {
+  color: #2baad1; }
+
 nav {
   font-family: sans-serif;
   padding: 21px 30px 21px 30px; }
@@ -28,12 +49,6 @@ nav {
     font-size: 20px; }
     .nav-mobile i:hover {
       color: white; }
-
-main-nav, .social-nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
 
 .main-nav {
   background: rgba(0, 0, 0, 0.5); }
@@ -64,7 +79,7 @@ main-nav, .social-nav {
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     position: absolute;
-    top: 21px;
+    top: 36px;
     right: 15px; }
     .social-nav .lang i {
       font-size: 20px; }
@@ -90,12 +105,97 @@ main-nav, .social-nav {
         .social-nav .lang .flags li:hover {
           opacity: 1; }
 
+.main-content {
+  color: #fff;
+  margin: 85px 0;
+  text-align: center; }
+  .main-content h2 {
+    font-size: 20px; }
+  .main-content a {
+    background: #fff;
+    border-radius: 10px;
+    color: #18191c;
+    display: inline-block;
+    font-size: 18px;
+    margin: 30px 0;
+    padding: 15px; }
+  .main-content .game {
+    margin: 30px 0; }
+  .main-content .title {
+    background: #232c30;
+    border: 3px dashed #f9dc00;
+    border-radius: 50%;
+    text-transform: uppercase;
+    width: 100px;
+    height: 100px; }
+  .main-content .product-mobile {
+    margin-top: 30px; }
+    .main-content .product-mobile img {
+      width: 170px; }
+  .main-content .screen-bugs {
+    display: none; }
+  .main-content .learn a {
+    background: transparent;
+    border: 3px solid #2baad1;
+    border-radius: 5px;
+    color: #2baad1; }
+
+footer {
+  color: #fff;
+  padding: 30px 0; }
+  footer .contact {
+    display: block;
+    margin-bottom: 65px;
+    text-align: center;
+    text-transform: capitalize; }
+    footer .contact i {
+      font-size: 30px; }
+    footer .contact h3 {
+      margin-top: 0; }
+    footer .contact ul {
+      margin: 30px 0;
+      padding: 0; }
+    footer .contact li {
+      padding-bottom: 5px; }
+  footer .sign-in {
+    margin-top: 65px;
+    text-align: center; }
+    footer .sign-in h1 {
+      font-size: 23px; }
+    footer .sign-in h2 {
+      font-size: 14px; }
+    footer .sign-in a {
+      background: #2baad1;
+      border-radius: 5px;
+      color: #3e4144;
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 17px;
+      padding: 20px 15px; }
+
+@media screen and (min-width: 414px) {
+  footer .contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .contact ul, footer .contact i {
+      margin: 30px 0;
+      padding: 0 30px; } }
+
 @media screen and (min-width: 922px) {
   body {
     background: #18191c;
     font-family: sans-serif; }
   .wrapper {
-    width: 80%;
+    maxwidth: 1300px;
     margin: 0 auto; }
   hr {
     border: 1px solid #3e4144; }
@@ -203,11 +303,15 @@ main-nav, .social-nav {
       text-transform: uppercase;
       width: 100px;
       height: 100px; }
+    .main-content .product-mobile {
+      display: none; }
     .main-content .screen-bugs {
       background: url(../img/screen.png) no-repeat;
       background-size: contain;
+      display: block;
       margin: 0 auto;
       position: relative;
+      overflow: hidden;
       width: 747px;
       height: 473px; }
       .main-content .screen-bugs i {
@@ -219,44 +323,47 @@ main-nav, .social-nav {
         color: #00a364;
         left: 330px;
         top: 110px;
-        -webkit-transition: -webkit-transform 1.5s;
-        transition: -webkit-transform 1.5s;
-        -o-transition: transform 1.5s;
-        transition: transform 1.5s;
-        transition: transform 1.5s, -webkit-transform 1.5s; }
+        -webkit-transition: -webkit-transform 3s;
+        transition: -webkit-transform 3s;
+        -o-transition: transform 3s;
+        transition: transform 3s;
+        transition: transform 3s, -webkit-transform 3s; }
       .main-content .screen-bugs .two {
         color: #00a364;
         right: 264px;
         bottom: 110px;
         -webkit-transform: rotateZ(270deg);
         -ms-transform: rotate(270deg);
-        transform: rotateZ(270deg); }
-        .main-content .screen-bugs .two:hover {
-          -webkit-transform: translateY(-2000px);
-          -ms-transform: translateY(-2000px);
-          transform: translateY(-2000px); }
+        transform: rotateZ(270deg);
+        -webkit-transition: -webkit-transform 3s;
+        transition: -webkit-transform 3s;
+        -o-transition: transform 3s;
+        transition: transform 3s;
+        transition: transform 3s, -webkit-transform 3s; }
       .main-content .screen-bugs .three {
         color: #18191c;
         left: 378px;
         top: 169px;
-        -webkit-transform: rotateZ(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotateZ(45deg); }
-        .main-content .screen-bugs .three:hover {
-          -webkit-transform: translateY(-2000px);
-          -ms-transform: translateY(-2000px);
-          transform: translateY(-2000px); }
+        -webkit-transform: rotateZ(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotateZ(90deg);
+        -webkit-transition: -webkit-transform 3s;
+        transition: -webkit-transform 3s;
+        -o-transition: transform 3s;
+        transition: transform 3s;
+        transition: transform 3s, -webkit-transform 3s; }
       .main-content .screen-bugs .four {
         color: #f9dc00;
         left: 166px;
         top: 190px;
         -webkit-transform: rotateZ(180deg);
         -ms-transform: rotate(180deg);
-        transform: rotateZ(180deg); }
-        .main-content .screen-bugs .four:hover {
-          -webkit-transform: translateY(-2000px);
-          -ms-transform: translateY(-2000px);
-          transform: translateY(-2000px); }
+        transform: rotateZ(180deg);
+        -webkit-transition: -webkit-transform 3s;
+        transition: -webkit-transform 3s;
+        -o-transition: transform 3s;
+        transition: transform 3s;
+        transition: transform 3s, -webkit-transform 3s; }
     .main-content .learn a {
       background: transparent;
       border: 3px solid #2baad1;
@@ -305,5 +412,6 @@ main-nav, .social-nav {
         border-radius: 5px;
         color: #3e4144;
         display: inline-block;
+        font-weight: bold;
         margin-top: 17px;
         padding: 20px 15px; } }
