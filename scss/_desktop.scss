@@ -1,56 +1,14 @@
 @import 'variables';
 
-body {
-    background: $black;
-    font-family: sans-serif;
-}
-
 .wrapper {
-    maxwidth: 1300px;
-    margin: 0 auto;
+    max-width: 1300px;
 }
 
-hr {
-    border: 1px solid $grey;
-}
-
-.link-button {
-    transition: transform 0.5s;
-    &:hover {
-        transform: translateY(5px);
-    }
-}
-
-.logo i {
-    color: $blue;
-}
 //Main nav Styles
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 21px 30px 21px 30px;
-    
-    
-    
-    
-//    Basic styles for ul and li in nav bar 
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-    
-    li {
-        color: rgba(255, 255, 255, 0.5);
-        text-transform: capitalize;
-        
-        &:hover {
-            color: rgba(255, 255, 255, 1);
-
-        }
-    }
-//    End of basic styles
-    
 }
 
 .nav-mobile {
@@ -72,27 +30,17 @@ nav {
             font-weight: 400;
         }
     }
-    li {
-        font-weight: bold;
-        padding: 10px 0 10px 5px;
-    }
+    
     .nav-bar {
         display: inline-block;
         li {
             display: inline-block;
         }
     }
-    .dropdown {
-        cursor: pointer;
-    }
-    a {
-        padding-right: 4px;
-    }
 } 
     //end of main nav
     
 .social-nav {
-    font-size: 17px;
     li {
         display: inline-block;
         padding: 10px 0px 10px 12px;
@@ -106,17 +54,14 @@ nav {
         }
     }
     .lang {
-        color: rgba(255, 255, 255, 0.5);
-        cursor: pointer;
         margin:  10px 0 0 25px;
         position: relative;
         top: 0;
-        i {
-            font-size: 20px
-        }
-        &:hover {
-            color: rgba(255, 255, 255, 1);
-        }
+//        i {
+//            &:hover {
+//            color: rgba(255, 255, 255, 1);
+//            }
+//        }
         .flags {
             top: 34px;
             left: -61px;
@@ -128,37 +73,12 @@ nav {
 // ======== Main Content ========
 
 .main-content {
-    color: #fff;
-    margin: 85px 0;
-    text-align: center;
-    
-    h2 {
-        font-size: 20px;
-    }
-    
-    a {
-        background: #fff;
-        border-radius: 10px;
-        color: $black;
-        display: inline-block;
-        font-size: 18px;
-        margin: 30px 0;
-        padding: 15px;
-        
-    }
-    
-    
-    .game {
-        margin: 30px 0;
+    .footnote {
+        display: none;
     }
     
     .title {
-        background: #232c30;
-        border: 3px dashed $yellow;
-        border-radius: 50%;
-        text-transform: uppercase;
-        width: 100px;
-        height: 100px;
+        //margin-bottom: 0;
     }
     
     .product-mobile {
@@ -168,105 +88,30 @@ nav {
     .screen-bugs {
         background: url(../img/screen.png) no-repeat;
         background-size: contain;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
         width: 747px;
         height: 473px;
-        i {
-            color: $black;
-            cursor: pointer;
-            font-size: 30px;
-            position: absolute;
-        }
         .one {
-            color: #00a364;
             left: 330px;
             top: 110px;
-            transition: transform 3s;
         }
         .two {
-            color: #00a364;
             right: 264px;
             bottom: 110px;
-            transform: rotateZ(270deg);
-            transition: transform 3s;
         }
         .three {
-            color: $black;
             left: 378px;
-            top: 169px;
-            transform: rotateZ(90deg);
-            transition: transform 3s;
-        }
-        .four {
-            color: $yellow;
-            left: 166px;
-            top: 190px;
-            transform: rotateZ(180deg);
-            transition: transform 3s;
-        }
-    }
-    
-    .learn {
-        a {
-            background: transparent;
-            border: 3px solid $blue;
-            border-radius: 5px;
-            color: $blue;
         }
     }
 } //End of main content
 
 footer {
-    color: #fff;
-    padding: 30px 0;
-    
     .contact {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 65px;
-        text-align: center;
-        text-transform: capitalize;
-       
-        i {
-            font-size: 30px;
-        }
-        
-        h3 {
-        margin-top: 0;
-        }
-        
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-        
-        li {
-            padding-bottom: 5px;
-        }
     } //enf of contact
     
     .sign-in {
         display: flex;
         justify-content: space-between;
-        margin-top: 65px;
-        h1 {
-            font-size: 23px;
-        }
-        h2 { 
-            font-size: 14px;
-        }
-        
-        a {
-            background: $blue;
-            border-radius: 5px;
-            color: $grey;
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 17px;
-            padding: 20px 15px;
-        }
     }
 }

@@ -1,3 +1,55 @@
+.main-content  {
+    .screen-bugs {
+        background: url('../img/phone.png') no-repeat;
+        background-size: cover;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        width: 254px;
+        height: 461px;
+        i {
+            color: $black;
+            cursor: pointer;
+            font-size: 30px;
+            position: absolute;
+        }
+        .one {
+            color: #00a364;
+            left: 113px;
+            top: 110px;
+            transition: transform 3s;
+        }
+        .two {
+            color: #00a364;
+            left: 108px;
+            bottom: 44px;
+            transform: rotateZ(270deg);
+            transition: transform 3s;
+        }
+        .three {
+            color: $black;
+            left: 45px;
+            top: 169px;
+            transform: rotateZ(90deg);
+            transition: transform 3s;
+        }
+        .four {
+            color: $yellow;
+            left: 166px;
+            top: 190px;
+            transform: rotateZ(180deg);
+            transition: transform 3s;
+        }
+    }
+}
+ 
+.main-content .footnote, .product-mobile {
+    display: none;
+}
+
+
+
 footer {
     .contact {
         display: flex;

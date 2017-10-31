@@ -1,5 +1,9 @@
 @import 'variables';
 
+* {
+    font-family: sans-serif;
+}
+
 body {
     background: $black;
 }
@@ -28,7 +32,6 @@ hr {
 //Main nav Styles
 
 nav {
-    font-family: sans-serif;
     padding: 21px 30px 21px 30px;
     
     //    Basic styles for ul and li in nav bar 
@@ -64,10 +67,6 @@ nav {
     }
 }
 
-//main-nav, .social-nav {
-//    display: flex;
-//}
-  
 
 // Main Nav
 .main-nav {
@@ -115,7 +114,7 @@ nav {
         color: rgba(255, 255, 255, 0.5);
         cursor: pointer;
         position: absolute;
-        top: 36px;
+        top: 21px;
         right: 15px;
         
         i {
@@ -179,10 +178,21 @@ nav {
         margin: 30px 0;
     }
     
+    .footnote {
+        color: rgba(226, 53, 47, 0.8);
+        display: block;
+        font-size: 10px;
+        margin-top: 50px;
+        text-align: left!important;
+        text-transform: none;
+    }
+    
     .title {
         background: #232c30;
         border: 3px dashed $yellow;
         border-radius: 50%;
+        display: block;
+        margin-bottom: 80px;
         text-transform: uppercase;
         width: 100px;
         height: 100px;
